@@ -103,8 +103,8 @@ p {
 }
 
 .page-section {
-  margin-top: 0rem;
-  margin-bottom: 0rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .section-heading {
@@ -308,6 +308,9 @@ p {
     position: relative;
     z-index: 1;
   }
+  .padding-pc{
+    padding-top: 1rem !important;
+  }  
 }
 
 @media (min-width: 992px) {
