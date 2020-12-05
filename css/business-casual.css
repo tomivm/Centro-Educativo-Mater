@@ -123,6 +123,13 @@ p {
   font-weight: 300;
 }
 
+@media (max-width:992px){
+  .section-heading .section-heading-lower {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+}
+
 .bg-faded {
   background-color: rgba(255, 255, 255, 0.76);
 }
