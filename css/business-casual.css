@@ -24,6 +24,7 @@ h6 {
 
 p {
   line-height: 1.75;
+  font-family: 'Raleway';
 }
 
 .text-faded {
@@ -111,21 +112,38 @@ p {
   text-transform: uppercase;
 }
 
+.section-heading-tittle{
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
 .section-heading .section-heading-upper {
   display: block;
-  font-size: 1rem;
-  font-weight: 800;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #176640;
 }
 
 .section-heading .section-heading-lower {
   display: block;
   font-size: 2.5rem;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 @media (max-width:992px){
+  .section-heading .section-heading-upper {
+    font-size: 1.7rem;
+    font-weight: 300;
+  }
+
   .section-heading .section-heading-lower {
     font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .section-heading-tittle{
+    font-size: 3rem;
     font-weight: 500;
   }
 }
@@ -185,6 +203,7 @@ p {
     font-weight: 400;
     font-size: 0.9rem;
   }
+
 }
 
 .logo-div{
@@ -336,7 +355,7 @@ p {
     z-index: 1;
     margin-top: -3rem;
     margin-bottom: 3rem;
-    max-width: 50vw;
+    max-width: 100vw;
   }
   .product-item .product-item-first {
     position: relative;
@@ -445,4 +464,91 @@ p {
 
 .font-weight-light {
   font-weight: 100 !important;
+}
+
+/*contact section*/
+.signup-section {
+  padding: 10rem 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%), url("../img/docentes.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.signup-section .form-inline input {
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  height: auto;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  border: 0;
+}
+
+.contact-section .card {
+  border: 0;
+  border-bottom: 0.25rem solid #177c4b;
+}
+.contact-section .card h4 {
+  font-size: 0.8rem;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+.contact-section .card hr {
+  border-color:#177c4b;
+  border-width: 0.25rem;
+  width: 3rem;
+}
+.contact-section .social {
+  margin-top: 2rem;
+}
+.contact-section .social a {
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  background: white;
+  border-radius: 100%;
+  line-height: 3rem;
+  color: #e6a756 ;
+}
+.contact-section a {
+  color: black;
+}
+.contact-section a:hover {
+  color:  #e6a756;
+}
+.contact-section .social a:hover {
+  color:#177c4b;
+}
+.contact-section .social a:active {
+  color:#177c4b);
+}
+
+.social-footer{
+  margin-top: -1rem;
+  margin-left: 26rem;
+}
+
+@media (max-width: 584px) {
+  .social-footer{
+    margin-top: 0rem !important;
+    margin-left: 0rem !important;
+  }
+}
+
+.google-maps {
+    position: relative;
+    margin-top: 2rem;
+    padding-bottom: 25%;
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
 }
