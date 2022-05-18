@@ -225,6 +225,19 @@ p {
   transition: visibility 1000ms linear;
   transition: opacity 1000ms linear;
 }
+.home-navigator {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn.btn-nav-home {
+  font-weight: 100;
+  width: 15em;
+  font-size: large;
+  margin: 0.5em 2em 0.5em 2em;
+}
 
 .video-responsive {
   position: relative;
